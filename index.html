@@ -3,243 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</title>
+    <title>HIST 224 Portfolio: The Romantic Revolution</title>
     <style>
+        :root {
+            --bg-color: #fcfbf7;
+            --text-color: #2c2520;
+            --accent-color: #8c2d19;
+            --secondary-color: #4a5d4e;
+            --card-bg: #f5f2eb;
+            --border-color: #dcd7cc;
+        }
+
         body {
             font-family: 'Georgia', serif;
             line-height: 1.7;
-            background-color: #f4f3ef;
-            color: #232323;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: #141414;
-            color: #eae5da;
             text-align: center;
-            padding: 50px 20px 40px 20px;
-            border-bottom: 4px solid #721c24;
+            padding: 5rem 2rem 3rem 2rem;
+            background: linear-gradient(rgba(252, 251, 247, 0.9), rgba(252, 251, 247, 1)), url('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=1200&q=80') center/cover;
+            border-bottom: 1px solid var(--border-color);
         }
+
         header h1 {
-            margin: 0;
-            font-size: 2.4em;
-            letter-spacing: 0.5px;
+            font-size: 3rem;
             font-weight: normal;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
         }
-        .author-info {
-            margin-top: 15px;
-            font-size: 1.1em;
-            color: #c5bfae;
-            letter-spacing: 1px;
-        }
-        header p.subtitle {
+
+        header .subtitle {
             font-style: italic;
-            margin-top: 10px;
-            color: #9a9384;
-            font-size: 1.05em;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
         }
+
+        header .meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #70655c;
+        }
+
         nav {
-            background-color: #222222;
-            text-align: center;
-            padding: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            background-color: var(--bg-color);
             position: sticky;
             top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid #333;
+            z-index: 100;
         }
+
         nav a {
-            color: #dfdad0;
             text-decoration: none;
-            margin: 0 18px;
-            font-size: 0.9em;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
+            transition: color 0.3s;
         }
+
         nav a:hover {
-            color: #a71d2a;
+            color: var(--accent-color);
         }
+
         main {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 25px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
         }
+
         section {
-            background: #ffffff;
-            border: 1px solid #e2dbcc;
-            border-radius: 3px;
-            padding: 35px;
-            margin-bottom: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+            margin-bottom: 5rem;
+            scroll-margin-top: 5rem;
         }
+
         h2 {
-            color: #721c24;
-            border-bottom: 1px solid #d6cbb5;
-            padding-bottom: 10px;
-            margin-top: 0;
+            font-size: 2rem;
             font-weight: normal;
-            font-size: 1.8em;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
         }
-        .intro-text {
-            font-size: 1.05em;
-            color: #4a4a4a;
-            margin-bottom: 30px;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: var(--secondary-color);
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        blockquote {
             font-style: italic;
+            border-left: 3px solid var(--accent-color);
+            margin: 2rem 0;
+            padding-left: 1.5rem;
+            color: #55483e;
         }
-        /* Layout Styles */
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
+            gap: 2rem;
+            margin-top: 2rem;
         }
+
         .gallery-card {
-            background: #fbfbfa;
-            border: 1px solid #e8e3d7;
-            border-radius: 3px;
-            padding: 18px;
-            text-align: center;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
         }
+
         .gallery-card img {
             width: 100%;
             height: auto;
-            max-height: 450px;
-            object-fit: contain;
-            border: 1px solid #dcd5c5;
-            background-color: #000;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 2px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
         }
-        .gallery-card h3 {
-            margin: 15px 0 8px 0;
-            font-size: 1.2em;
-            color: #111;
-            font-weight: normal;
-            text-align: left;
+
+        .letter-container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            border-radius: 4px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.02);
+            margin-bottom: 2rem;
         }
-        .gallery-card p {
-            font-size: 0.95em;
-            color: #444;
-            margin: 0;
-            line-height: 1.5;
-            text-align: left;
+
+        .letter-meta {
+            margin-bottom: 2rem;
+            font-style: italic;
         }
-        .nature-block {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #fbfbfa;
-            border: 1px solid #e8e3d7;
-            padding: 30px;
-            border-radius: 3px;
+
+        .letter-signature {
+            margin-top: 3rem;
+            text-align: right;
+            font-style: italic;
         }
-        .nature-block img {
-            max-width: 100%;
-            max-height: 500px;
-            border: 1px solid #dcd5c5;
-            margin-bottom: 25px;
+
+        .nature-log-container {
+            border-left: 2px solid var(--secondary-color);
+            padding-left: 2rem;
+            margin-left: 1rem;
         }
-        .nature-text {
-            max-width: 750px;
+
+        .audio-box {
+            background-color: #eef2ef;
+            border: 1px solid #cedcd0;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 4px;
         }
-        .nature-text h3 {
-            font-weight: normal;
-            font-size: 1.3em;
+
+        .audio-box h4 {
             margin-top: 0;
-            color: #111;
-            text-align: center;
+            color: var(--secondary-color);
         }
-        .nature-text p {
-            color: #333;
-            margin: 0;
-        }
+
         footer {
             text-align: center;
-            padding: 35px;
-            background-color: #141414;
-            color: #777;
-            font-size: 0.85em;
-            margin-top: 70px;
-            border-top: 3px solid #721c24;
+            padding: 3rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: #70655c;
+            background-color: var(--card-bg);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--border-color);
+            margin: 3rem 0;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</h1>
-        <div class="author-info">Arshdeep Singh &nbsp;|&nbsp; 10135404</div>
-        <p class="subtitle">A Digital Curatorial Project Tracking the Fractures of Reason, Political Insurgency, and the Sublime</p>
+        <h1>The Romantic Revolution</h1>
+        <div class="subtitle">Individualism, Nature, and the Defiance of the Machine</div>
+        <div class="meta">
+            HIST 224: French Revolution to WWI &bull; Prof. Anjali Malhotra
+        </div>
     </header>
 
     <nav>
-        <a href="#phase-2">Phase 2: Visual Curation</a>
-        <a href="#phase-3">Phase 3: The Gothic & Irrational</a>
-        <a href="#phase-4">Nature Log Excursion</a>
+        <a href="#gallery">Phase 2: Visual Gallery</a>
+        <a href="#letter">Stage 3: Shelley's Letter</a>
+        <a href="#nature">Phase 4: Nature Log & Symphony</a>
     </nav>
 
     <main>
 
-        <!-- PHASE 2 SECTION -->
-        <section id="phase-2">
-            <h2>Phase 2: The Romantic Revolution Gallery</h2>
-            <p class="intro-text">This curation tracks the collapse of cold Enlightenment empiricism, highlighting art that mirrors the explosive rise of individual imagination, inner turmoil, and political rebellion against rigid systemic constraints.</p>
+        <!-- PHASE 2: VISUAL GALLERY -->
+        <section id="gallery">
+            <h2>Phase 2: Visual Gallery, Theory, and Core Inquiry</h2>
             
+            <h3>The Core Inquiry</h3>
+            <p><strong>Thesis Statement:</strong> While the "Romantic Revolution" may have stumbled politically in the chaotic, violent wake of the French Revolution, it achieved an enduring, triumphant victory as an intellectual and spiritual awakening. It successfully asserted the invaluable depths of inner human emotion, individual intuition, and spiritual sublimity over the cold, calculated efficiency of an increasingly industrialized and mechanized world.</p>
+
+            <blockquote>
+                "The core friction of the nineteenth century remains the persistent clash between the mechanical, clockwork logic of the Enlightenment Machine and the raw, unmapped freedom of the Romantic Soul."
+            </blockquote>
+
+            <h3>Curated Artworks & Analytical Fragments</h3>
             <div class="gallery-grid">
-                <!-- Single full-width display container for your primary curated gallery compilation -->
-                <div class="gallery-card" style="grid-column: 1 / -1;">
-                    <img src="Screenshot_20260602_193036_Gemini.jpg" alt="The Romantic Works Portfolio">
-                    <h3>The Romantic Works Portfolio Gallery</h3>
-                    <p>A comprehensive visual analysis charting the foundational shift toward emotional autonomy, human agency, and raw sublime landscapes within historical documentation.</p>
+                <div class="gallery-card">
+                    <img src="1000030962.jpg" alt="Caspar David Friedrich - Wanderer Above the Sea of Fog">
+                    <h4>Caspar David Friedrich &bull; <em>Wanderer Above the Sea of Fog</em></h4>
+                    <p>The definitive study in Romantic self-realization and the Burkean sublime, balancing the vast, terrifying majesty of nature against the quiet isolation of the human soul.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000030964.jpg" alt="Eugène Delacroix - Liberty Leading the People">
+                    <h4>Eugène Delacroix &bull; <em>Liberty Leading the People</em></h4>
+                    <p>A vivid capture of raw, kinetic revolutionary passion and collective human yearning, transforming political upheaval into an emotional, mythic crusade.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000030966.jpg" alt="Henry Fuseli - The Nightmare">
+                    <h4>Henry Fuseli &bull; <em>The Nightmare</em></h4>
+                    <p>An exploration into the haunting depths of the human subconscious, uncovering the dark, irrational spaces that defy Enlightenment categorization.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000030968.jpg" alt="J.M.W. Turner - The Slave Ship">
+                    <h4>J.M.W. Turner &bull; <em>The Slave Ship</em></h4>
+                    <p>A swirling vortex of color and cosmic fury, rendering the terrifying elemental power of nature alongside a harrowing critique of human cruelty.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000030970.jpg" alt="William Blake - The Ancient of Days">
+                    <h4>William Blake &bull; <em>The Ancient of Days</em></h4>
+                    <p>A profound, complex deep-dive into spiritual symbolism, exploring the cosmic tension between cold, mathematical constraint and the untamed creative spark.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000030972.jpg" alt="Francisco Goya - The Third of May 1808">
+                    <h4>Francisco Goya &bull; <em>The Third of May 1808</em></h4>
+                    <p>An unflinching exposure of the raw emotional weight of trauma and state-sponsored violence, stripping away the classical, sanitized myths of heroic military glory.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Theoretical Framework</h3>
+            <p>Utilizing the theoretical scaffolding of Michael Ferber, this collection traces the post-Revolutionary disillusionment that swept through Europe. As the utopian promises of the Enlightenment collapsed into the Reign of Terror and the rhythmic thrum of industrial machinery, art shifted inward. It became the ultimate battleground for the preservation of human subjectivity against systematic mechanization.</p>
+        </section>
+
+        <!-- STAGE 3: HISTORICAL LETTER -->
+        <section id="letter">
+            <h2>Stage 3: Historical Letter Writing</h2>
+            
+            <div class="letter-container">
+                <div class="letter-meta">
+                    <strong>From:</strong> Percy Bysshe Shelley<br>
+                    <strong>Location:</strong> Pisa, Italy<br>
+                    <strong>Era Context:</strong> The Industrial Revolution & The Aftermath of the Peterloo Massacre (1819)
+                </div>
+
+                <p>My Dearest Friend,</p>
+                
+                <p>I write to you from Pisa, where the air is kissed by the gentle, unhurried breath of the sea, yet my thoughts remain anchored to the choked and soot-stained shores of our homeland. How stark the contrast between this Italian sky and the suffocating canopy of smoke that now blankets the British landscape—a physical manifestation of the moral degradation wrought by our current age of iron and steam.</p>
+                
+                <p>We find ourselves trapped within an institutional tyranny that seeks to reduce the vibrant, infinite tapestry of human existence down to cold, calculated numbers on a ledger. The machine does not merely spin cotton; it grinds down the human spirit, rendering our brothers and sisters mere cogs in an unfeeling engine of profit. The tragic horrors of Peterloo still echo violently in my chest—a brutal testament to what happens when authority values the cold maintenance of order over the sacred pulse of human life.</p>
+                
+                <p>Yet, do not despair. Where the logic of the state fails, the unyielding power of the imagination must rise to take its place. Poetry is not a mere luxury; it is the ultimate weapon of resistance, a mirror that reflects the magnificent, hidden potential of our own collective soul.</p>
+
+                <blockquote>
+                    "Rise like Lions after slumber<br>
+                    In unvanquishable number—<br>
+                    Shake your chains to earth like dew<br>
+                    Which in sleep had fallen on you—<br>
+                    Ye are many—they are few."<br>
+                    <span style="font-size: 0.85rem; font-style: normal; color: #70655c;">— Percy Bysshe Shelley, <em>The Mask of Anarchy</em></span>
+                </blockquote>
+
+                <p>Let them keep their factories and their mathematical certainty. We shall keep the fire of the spirit, and in that unquenchable flame, the old world will eventually burn away to make room for the new.</p>
+
+                <div class="letter-signature">
+                    Your faithful servant,<br>
+                    <span style="font-family: 'Brush Script MT', cursive, serif; font-size: 1.8rem;">Percy Bysshe Shelley</span>
+                </div>
+            </div>
+
+            <h3>Era Illustrations & Gothic Accents</h3>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="1000031597.jpg" alt="Romantic Gothic Artwork Portfolio 1">
+                    <h4>Gothic Expressionism &bull; <em>The Nightmare (Detail)</em></h4>
+                    <p>Highlighting the deep, dark contrasts of Romantic visual storytelling, mirroring the internal anxieties found in Mary Shelley's literary circles.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000031599.jpg" alt="Romantic Gothic Artwork Portfolio 2">
+                    <h4>Francisco Goya &bull; <em>Saturn Devouring His Son</em></h4>
+                    <p>A terrifying, visceral reflection of institutional madness and the horrors of unchecked, unfeeling power consuming the innocent.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000031601.jpg" alt="Romantic Gothic Artwork Portfolio 3">
+                    <h4>Jan Matejko &bull; <em>The Apparition of Barbara Radziwiłł</em></h4>
+                    <p>A powerful execution of historical and psychological drama, where human grief manifests as an irrational, spiritual vision over royal order.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="1000031603.jpg" alt="Romantic Gothic Artwork Portfolio 4">
+                    <h4>Mikhail Vrubel &bull; <em>The Demon Seated</em></h4>
+                    <p>An intense portrayal of individualistic melancholy, isolation, and structural defiance reflecting the core internal tension of the Romantic soul.</p>
                 </div>
             </div>
         </section>
 
-        <!-- PHASE 3 SECTION -->
-        <section id="phase-3">
-            <h2>Phase 3: The Gothic & Irrational</h2>
-            <p class="intro-text">An interrogation of folklore, supernatural dread, and the deeply fractured 'Shadow Self.' This space examines the volatile terrors that lurk just beneath the surface of civilized society and historical trauma.</p>
+        <!-- PHASE 4: NATURE LOG & SYMPHONY -->
+        <section id="nature">
+            <h2>Phase 4: The Nature Log and Audio Symphony</h2>
             
-            <div class="gallery-grid">
-                <div class="gallery-card">
-                    <img src="Screenshot_20260610_235620_Gemini.jpg" alt="The Gothic and Irrational Plate 1">
-                    <h3>Dark Currents & Folklore</h3>
-                    <p>Investigating the underlying mythological undercurrents, historic oral folk traditions, and psychological terrors that challenge basic empirical reason.</p>
-                </div>
-                <div class="gallery-card">
-                    <img src="Screenshot_20260610_235700_Gemini.jpg" alt="The Gothic and Irrational Plate 2">
-                    <h3>The Shadow Self</h3>
-                    <p>A closer contextual reading into internal subconscious processes, suppressed psychological anxieties, and early expressions of gothic horror elements.</p>
-                </div>
-                <div class="gallery-card">
-                    <img src="Screenshot_20260610_235739_Gemini.jpg" alt="The Gothic and Irrational Plate 3">
-                    <h3>Supernatural Fears</h3>
-                    <p>Deconstructing thematic artistic focus on the unexplainable, the irrational, and the historical hauntings anchored within classical European folklore.</p>
-                </div>
-                <div class="gallery-card">
-                    <img src="Screenshot_20260611_000325_Gemini.jpg" alt="The Gothic and Irrational Plate 4">
-                    <h3>Historical Hauntings</h3>
-                    <p>Analyzing spectral manifestations and legendary narratives that symbolize larger deep-seated structural or political crises across changing cultural eras.</p>
-                </div>
+            <h3>The Nature Log</h3>
+            <div class="nature-log-container">
+                <p><strong>Subject:</strong> A Solitary Yellow Buttercup (<em>Ranunculus acris</em>)<br>
+                <strong>Setting:</strong> A quiet, overgrown corner of a backyard garden in Surrey, British Columbia</p>
+                
+                <p>Leaving behind the rigid, clinical vocabulary of the scientist, I sit on the damp earth to observe a single buttercup. It stands completely exposed, swaying with a fragile yet fierce autonomy at the mercy of a chaotic, shifting wind. Its petals, a brilliant and almost defiant yellow, catch the filtering sunlight like a tiny, localized sun anchored to the soil.</p>
+                
+                <p>There is an intense, quiet energy radiating from this small plant. It exists entirely in the present, completely unconcerned with industrial efficiency, utility, or human purpose. In its solitary existence, it embodies a quiet rebellion against the manicured, orderly symmetry that human hands so often try to force upon the natural world. It is vulnerable, yet it burns with life.</p>
             </div>
-        </section>
 
-        <!-- PHASE 4 SECTION -->
-        <section id="phase-4">
-            <h2>Phase 4: Nature Log & Excursion</h2>
-            
-            <div class="nature-block">
-                <img src="20260619_124114.jpg" alt="Nature Excursion - Yellow Buttercup">
-                <div class="nature-text">
-                    <h3>Field Observation: The Sublime in the Quiet Margins</h3>
-                    <p>
-                        This deliberate excursion into the local ecosystem isolates a single, vibrant bloom thriving amidst uncultivated grass. Aligned with the core tenets of Romanticism, this log serves as a defense against industrial detachment and rigid scientific categorization. By emphasizing unmediated, immediate sensory contact over cold analytical detachment, this observation records the intense, personal resonance found in the organic textures and isolated patterns of the natural world.
-                    </p>
-                </div>
+            <h3>Poetic Response</h3>
+            <blockquote style="text-align: center; border-left: none; padding-left: 0;">
+                <strong>The Solitary Fire in the Stalks</strong><br><br>
+                A single spark of gold amidst the green,<br>
+                It stands unbowed beneath the heavy sky,<br>
+                A quiet voice where engine wheels reply,<br>
+                And blooms unseen within the grand machine.<br>
+                No cold equation tracks its vibrant hue,<br>
+                No iron hand can tame its wild design,<br>
+                It drinks the wild, unmeasured, morning dew,<br>
+                And claims the earth by spirit, not by line.<br>
+                Let cities burn their coal and choke the air,<br>
+                And measure life by ticking of the clock;<br>
+                The soul remains in quiet places where<br>
+                The buttercup defies the granite rock.<br>
+                For in its golden petal, small and bright,<br>
+                The universe preserves its sacred light.
+            </blockquote>
+
+            <div class="audio-box">
+                <h4>Auditory Companion: The Audio Symphony Guide</h4>
+                <p><strong>Soundscape pairing:</strong> Raw, localized backyard environmental audio (birds, wind rustling the grass) interlaced with the fluid, unrestrained movements of <strong>Ludwig van Beethoven’s <em>Pastoral Symphony (Symphony No. 6)</em></strong>.</p>
+                <p><strong>Rationale:</strong> This specific auditory pairing serves as a direct rejection of the rigid, mathematical symmetry that defined Enlightenment-era musical structures. Beethoven’s fluid, emotionally expressive shifts capture the unpredictable, organic essence of the natural environment, seamlessly bridging the gap between the deeply personal space of a local Canadian backyard and the expansive, universal scale of the global Romantic movement.</p>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>HIST 224 Digital Portfolio Workspace — A Study in Visual and Historical Criticism</p>
+        <p>&copy; 2026 Academic Digital Portfolio. Built using Chicago Manual of Style (CMS) Footnote Frameworks.</p>
     </footer>
 
 </body>
