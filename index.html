@@ -1,464 +1,244 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIST 224 Portfolio: The Romantic Revolution</title>
+    <title>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</title>
     <style>
-        :root {
-            --bg-color: #fcfbf7;
-            --text-color: #2c2520;
-            --accent-color: #8c2d19;
-            --secondary-color: #4a5d4e;
-            --card-bg: #f5f2eb;
-            --border-color: #dcd7cc;
-        }
-
         body {
             font-family: 'Georgia', serif;
             line-height: 1.7;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: #f4f3ef;
+            color: #232323;
             margin: 0;
             padding: 0;
         }
-
         header {
+            background-color: #141414;
+            color: #eae5da;
             text-align: center;
-            padding: 4rem 2rem 3rem 2rem;
-            background: linear-gradient(rgba(252, 251, 247, 0.9), rgba(252, 251, 247, 1)), url('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=1200&q=80') center/cover;
-            border-bottom: 1px solid var(--border-color);
+            padding: 50px 20px 40px 20px;
+            border-bottom: 4px solid #721c24;
         }
-
         header h1 {
-            font-size: 3rem;
+            margin: 0;
+            font-size: 2.4em;
+            letter-spacing: 0.5px;
             font-weight: normal;
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
         }
-
-        .student-info {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: var(--text-color);
-            margin-bottom: 0.5rem;
-        }
-
-        header .subtitle {
-            font-style: italic;
-            font-size: 1.2rem;
-            color: var(--secondary-color);
-            margin-bottom: 2rem;
-        }
-
-        header .meta {
-            font-size: 0.9rem;
-            text-transform: uppercase;
+        .author-info {
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #c5bfae;
             letter-spacing: 1px;
-            color: #70655c;
         }
-
+        header p.subtitle {
+            font-style: italic;
+            margin-top: 10px;
+            color: #9a9384;
+            font-size: 1.05em;
+        }
         nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 0;
-            background-color: var(--bg-color);
+            background-color: #222222;
+            text-align: center;
+            padding: 12px;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
         }
-
         nav a {
+            color: #dfdad0;
             text-decoration: none;
-            color: var(--text-color);
-            font-weight: bold;
-            font-size: 0.9rem;
+            margin: 0 18px;
+            font-size: 0.9em;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
+            letter-spacing: 1.5px;
         }
-
         nav a:hover {
-            color: var(--accent-color);
+            color: #a71d2a;
         }
-
         main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 25px;
         }
-
         section {
-            margin-bottom: 5rem;
-            scroll-margin-top: 5rem;
+            background: #ffffff;
+            border: 1px solid #e2dbcc;
+            border-radius: 3px;
+            padding: 35px;
+            margin-bottom: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.01);
         }
-
         h2 {
-            font-size: 2rem;
+            color: #721c24;
+            border-bottom: 1px solid #d6cbb5;
+            padding-bottom: 10px;
+            margin-top: 0;
             font-weight: normal;
-            color: var(--accent-color);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
+            font-size: 1.8em;
         }
-
-        h3 {
-            font-size: 1.4rem;
-            font-weight: normal;
-            color: var(--secondary-color);
-            margin-top: 2rem;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-        }
-
-        blockquote {
+        .intro-text {
+            font-size: 1.05em;
+            color: #4a4a4a;
+            margin-bottom: 30px;
             font-style: italic;
-            border-left: 3px solid var(--accent-color);
-            margin: 2rem 0;
-            padding-left: 1.5rem;
-            color: #55483e;
         }
-
-        .portfolio-img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1.5rem auto;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-
+        /* Layout Styles */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
         }
-
         .gallery-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 1.5rem;
-            border-radius: 4px;
+            background: #fbfbfa;
+            border: 1px solid #e8e3d7;
+            border-radius: 3px;
+            padding: 18px;
+            text-align: center;
+        }
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            border: 1px solid #dcd5c5;
+            background-color: #000;
+        }
+        .gallery-card h3 {
+            margin: 15px 0 8px 0;
+            font-size: 1.2em;
+            color: #111;
+            font-weight: normal;
+            text-align: left;
+        }
+        .gallery-card p {
+            font-size: 0.95em;
+            color: #444;
+            margin: 0;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .nature-block {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
+            background: #fbfbfa;
+            border: 1px solid #e8e3d7;
+            padding: 30px;
+            border-radius: 3px;
         }
-
-        .gallery-card h4 {
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-            color: var(--accent-color);
-            font-size: 1.1rem;
+        .nature-block img {
+            max-width: 100%;
+            max-height: 500px;
+            border: 1px solid #dcd5c5;
+            margin-bottom: 25px;
         }
-
-        .letter-container {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 3rem;
-            border-radius: 4px;
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.02);
+        .nature-text {
+            max-width: 750px;
         }
-
-        .letter-meta {
-            margin-bottom: 2rem;
-            font-style: italic;
-        }
-
-        .letter-signature {
-            margin-top: 3rem;
-            text-align: right;
-            font-style: italic;
-        }
-
-        .nature-log-container {
-            border-left: 2px solid var(--secondary-color);
-            padding-left: 2rem;
-            margin-left: 1rem;
-        }
-
-        .audio-box {
-            background-color: #eef2ef;
-            border: 1px solid #cedcd0;
-            padding: 1.5rem;
-            margin-top: 2rem;
-            border-radius: 4px;
-        }
-
-        .audio-box h4 {
+        .nature-text h3 {
+            font-weight: normal;
+            font-size: 1.3em;
             margin-top: 0;
-            color: var(--secondary-color);
+            color: #111;
+            text-align: center;
         }
-
-        .footnotes {
-            border-top: 1px solid var(--border-color);
-            margin-top: 3rem;
-            padding-top: 1rem;
-            font-size: 0.85rem;
-            color: #55483e;
-            line-height: 1.5;
+        .nature-text p {
+            color: #333;
+            margin: 0;
         }
-
-        .footnotes ol {
-            padding-left: 1.2rem;
-        }
-
-        .footnotes li {
-            margin-bottom: 0.5rem;
-            text-align: justify;
-        }
-
-        .bibliography-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .bibliography-list li {
-            padding-left: 2rem;
-            text-indent: -2rem;
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-
         footer {
             text-align: center;
-            padding: 3rem;
-            border-top: 1px solid var(--border-color);
-            font-size: 0.9rem;
-            color: #70655c;
-            background-color: var(--card-bg);
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px dashed var(--border-color);
-            margin: 3rem 0;
-        }
-
-        sup a {
-            text-decoration: none;
-            color: var(--accent-color);
-            font-weight: bold;
+            padding: 35px;
+            background-color: #141414;
+            color: #777;
+            font-size: 0.85em;
+            margin-top: 70px;
+            border-top: 3px solid #721c24;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>The Romantic Revolution</h1>
-        <div class="student-info">Arshdeep Singh | Student Number: 10135404</div>
-        <div class="subtitle">Human Feelings and Nature vs. the Power of Machines</div>
-        <div class="meta">
-            HIST 224: French Revolution to WWI &bull; Prof. Anjali Malhotra
-        </div>
+        <h1>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</h1>
+        <div class="author-info">Arshdeep Singh &nbsp;|&nbsp; 10135404</div>
+        <p class="subtitle">A Digital Curatorial Project Tracking the Fractures of Reason, Political Insurgency, and the Sublime</p>
     </header>
 
     <nav>
-        <a href="#gallery">Phase 2: Art Gallery</a>
-        <a href="#letter">Stage 3: Shelley's Letter</a>
-        <a href="#nature">Phase 4: Nature Log & Music</a>
-        <a href="#bibliography">Bibliography</a>
+        <a href="#phase-2">Phase 2: Visual Curation</a>
+        <a href="#phase-3">Phase 3: The Gothic & Irrational</a>
+        <a href="#phase-4">Nature Log Excursion</a>
     </nav>
 
     <main>
 
-        <!-- PHASE 2: VISUAL GALLERY -->
-        <section id="gallery">
-            <h2>Phase 2: Art Gallery, Theory, and Main Idea</h2>
+        <!-- PHASE 2 SECTION -->
+        <section id="phase-2">
+            <h2>Phase 2: The Romantic Revolution Gallery</h2>
+            <p class="intro-text">This gallery shows how art moved away from strict rules and logic. Instead, it focuses on strong personal feelings, imagination, and people fighting back against unfair control.</p>
             
-            <h3>The Main Idea</h3>
-            <p><strong>Main Argument:</strong> Even though the Romantic movement did not change politics right away after the French Revolution, it won a huge victory in the world of ideas. It proved that human feelings, personal thoughts, and the beauty of nature are much more important than the cold, calculated rules of factories and machines.<sup><a href="#fn-1" id="ref-1">1</a></sup></p>
-
-            <blockquote>
-                "The biggest fight of the 1800s was between the cold, rigid logic of the Enlightenment and the free, creative power of the human soul."
-            </blockquote>
-
-            <h3>Selected Artworks and Meanings</h3>
             <div class="gallery-grid">
-                
-                <div class="gallery-card">
-                    <img src="1000030966.jpg" alt="The Nightmare" class="portfolio-img">
-                    <h4>Henry Fuseli &bull; <em>The Nightmare</em><sup><a href="#fn-2" id="ref-2">2</a></sup></h4>
-                    <p>This painting shows dark dreams and scary hidden thoughts. It looks at the spooky, emotional parts of the mind that cold science cannot explain.</p>
+                <div class="gallery-card" style="grid-column: 1 / -1;">
+                    <img src="Screenshot_20260602_193036_Gemini.jpg" alt="Phase 2 Romantic Gallery Integration">
+                    <h3>The Romantic Works Portfolio</h3>
+                    <p>This curation highlights pieces that focus on deep personal feelings, wild nature scenes, and collective rebellion against cold, rigid structures.</p>
                 </div>
-
-                <div class="gallery-card">
-                    <img src="1000030964.jpg" alt="Liberty Leading the People" class="portfolio-img">
-                    <h4>Eugène Delacroix &bull; <em>Liberty Leading the People</em><sup><a href="#fn-3" id="ref-3">3</a></sup></h4>
-                    <p>This image captures the excitement and strong feelings of regular people fighting together for freedom during a revolution.</p>
-                </div>
-
-                <div class="gallery-card">
-                    <img src="1000030970.jpg" alt="The Ancient of Days" class="portfolio-img">
-                    <h4>William Blake &bull; <em>The Ancient of Days</em><sup><a href="#fn-4" id="ref-4">4</a></sup></h4>
-                    <p>This artwork shows the fight between strict mathematical rules and the wild, free power of human creation and imagination.</p>
-                </div>
-
-                <div class="gallery-card">
-                    <img src="1000030968.jpg" alt="The Slave Ship" class="portfolio-img">
-                    <h4>J.M.W. Turner &bull; <em>The Slave Ship</em><sup><a href="#fn-5" id="ref-5">5</a></sup></h4>
-                    <p>This painting uses wild colors to show a terrible tragedy at sea. It shows the scary, untamed power of stormy weather mixed with human cruelty.</p>
-                </div>
-
-                <div class="gallery-card">
-                    <img src="1000030972.jpg" alt="The Third of May 1808" class="portfolio-img">
-                    <h4>Francisco Goya &bull; <em>The Third of May 1808</em><sup><a href="#fn-6" id="ref-6">6</a></sup></h4>
-                    <p>This artwork shows the real pain and sadness of war. It focuses on the fear of regular people instead of making war look glorious.</p>
-                </div>
-
-                <div class="gallery-card">
-                    <img src="1000030962.jpg" alt="Wanderer Above the Sea of Fog" class="portfolio-img">
-                    <h4>Caspar David Friedrich &bull; <em>Wanderer Above the Sea of Fog</em><sup><a href="#fn-7" id="ref-7">7</a></sup></h4>
-                    <p>This famous painting shows how small a single human feels when standing next to the massive, beautiful, and foggy power of nature.</p>
-                </div>
-
-            </div>
-
-            <hr>
-
-            <h3>The Ideas Behind the Art</h3>
-            <p>Using the ideas of writer Michael Ferber, this collection shows how disappointed people felt after the French Revolution.<sup><a href="#fn-8" id="ref-8">8</a></sup> When the promises of a perfect world failed and loud factories started taking over, artists looked inside themselves. Art became a way to protect human feelings from being crushed by machines.</p>
-            
-            <div class="footnotes">
-                <ol>
-                    <li id="fn-1">Michael Ferber, <em>Romanticism: A Very Short Introduction</em> (Oxford: Oxford University Press, 2010), 12-14. <a href="#ref-1">&larr;</a></li>
-                    <li id="fn-2">Henry Fuseli, <em>The Nightmare</em>, 1781, oil on canvas, Detroit Institute of Arts, Referenced from project file "1000030966.jpg". <a href="#ref-2">&larr;</a></li>
-                    <li id="fn-3">Eugène Delacroix, <em>Liberty Leading the People</em>, 1830, oil on canvas, Musée du Louvre, Paris, Referenced from project file "1000030964.jpg". <a href="#ref-3">&larr;</a></li>
-                    <li id="fn-4">William Blake, <em>The Ancient of Days</em>, 1794, relief etching with watercolor, British Museum, London, Referenced from project file "1000030970.jpg". <a href="#ref-4">&larr;</a></li>
-                    <li id="fn-5">J.M.W. Turner, <em>The Slave Ship (Slavers Throwing overboard the Dead and Dying, Typhoon Coming On)</em>, 1840, oil on canvas, Museum of Fine Arts, Boston, Referenced from project file "1000030968.jpg". <a href="#ref-5">&larr;</a></li>
-                    <li id="fn-6">Francisco Goya, <em>The Third of May 1808</em>, 1814, oil on canvas, Museo del Prado, Madrid, Referenced from project file "1000030972.jpg". <a href="#ref-6">&larr;</a></li>
-                    <li id="fn-7">Caspar David Friedrich, <em>Wanderer Above the Sea of Fog</em>, 1818, oil on canvas, Kunsthalle Hamburg, Hamburg, Referenced from project file "1000030962.jpg". <a href="#ref-7">&larr;</a></li>
-                    <li id="fn-8">Ferber, <em>Romanticism</em>, 22-25. <a href="#ref-8">&larr;</a></li>
-                </ol>
             </div>
         </section>
 
-        <!-- STAGE 3: HISTORICAL LETTER -->
-        <section id="letter">
-            <h2>Stage 3: Writing a Historical Letter</h2>
+        <!-- PHASE 3 SECTION -->
+        <section id="phase-3">
+            <h2>Phase 3: The Gothic & Irrational</h2>
+            <p class="intro-text">This section looks at spooky old stories, ghosts, and the dark, hidden sides of our minds. It explores the fears that stay under the surface of our quiet everyday lives.</p>
             
-            <div class="letter-container">
-                <div class="letter-meta">
-                    <strong>From:</strong> Percy Bysshe Shelley<br>
-                    <strong>Location:</strong> Pisa, Italy<br>
-                    <strong>Time Period:</strong> The Industrial Revolution & The Peterloo Massacre (1819)<sup><a href="#fn-9" id="ref-9">9</a></sup>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="Screenshot_20260610_235620_Gemini.jpg" alt="Gothic Artwork 1">
+                    <h3>Dark Currents & Folklore</h3>
+                    <p>Visual studies investigating the supernatural elements and folklore that influenced this movement.</p>
                 </div>
-
-                <p>My Dearest Friend,</p>
-                
-                <p>I am writing to you from Italy, where the air is clean and peaceful near the sea. However, my mind keeps thinking about home. The sky in England is now filled with dark smoke from factories, which matches the sad state of our country's spirit.</p>
-                
-                <p>We are trapped by systems that treat human beings like numbers in a book. The machines do not just make cloth; they crush human happiness. People are being treated like small parts of a giant machine just to make money for others. The terrible violence at Peterloo showed us what happens when rulers care more about control than human life.<sup><a href="#fn-10" id="ref-10">10</a></sup></p>
-                
-                <p>But we must not give up hope. When rulers fail us, our imagination must help us fight back. Poetry is not just a hobby; it is a powerful tool to show how much strength regular people truly have when they stand together.</p>
-
-                <blockquote>
-                    "Rise like Lions after slumber<br>
-                    In unvanquishable number—<br>
-                    Shake your chains to earth like dew<br>
-                    Which in sleep had fallen on you—<br>
-                    Ye are many—they are few."<sup><a href="#fn-11" id="ref-11">11</a></sup><br>
-                    <span style="font-size: 0.85rem; font-style: normal; color: #70655c;">— Percy Bysshe Shelley, <em>The Mask of Anarchy</em></span>
-                </blockquote>
-
-                <p>Let them keep their factories and their math. We will keep our passion and spirit, and that spirit will eventually build a better, freer world.</p>
-
-                <div class="letter-signature">
-                    Your faithful servant,<br>
-                    <span style="font-family: 'Brush Script MT', cursive, serif; font-size: 1.8rem;">Percy Bysshe Shelley</span>
+                <div class="gallery-card">
+                    <img src="Screenshot_20260610_235700_Gemini.jpg" alt="Gothic Artwork 2">
+                    <h3>The Shadow Self</h3>
+                    <p>Art capturing internal psychological fears and dark emotional states.</p>
                 </div>
-            </div>
-            
-            <div class="footnotes">
-                <ol>
-                    <li id="fn-9">Percy Bysshe Shelley, <em>The Letters of Percy Bysshe Shelley</em>, ed. Frederick L. Jones (Oxford: Clarendon Press, 1964), 2:112-115. <a href="#ref-9">&larr;</a></li>
-                    <li id="fn-10">For historical context on Shelley's reaction to the industrial landscapes and political crackdowns of 1819, see Marilyn Butler, <em>Romantics, Rebels and Reactionaries: English Literature and its Background 1760-1830</em> (Oxford: Oxford University Press, 1981), 140-143. <a href="#ref-10">&larr;</a></li>
-                    <li id="fn-11">Percy Bysshe Shelley, "The Mask of Anarchy," in <em>The Complete Poetical Works of Percy Bysshe Shelley</em> (London: New York: Oxford University Press, 1914), lines 368–372. <a href="#ref-11">&larr;</a></li>
-                </ol>
+                <div class="gallery-card">
+                    <img src="Screenshot_20260610_235739_Gemini.jpg" alt="Gothic Artwork 3">
+                    <h3>Supernatural Fears</h3>
+                    <p>Exploring irrational terrors that simple reason cannot fix or explain.</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="Screenshot_20260611_000325_Gemini.jpg" alt="Gothic Artwork 4">
+                    <h3>Historical Hauntings</h3>
+                    <p>Legends and spectral imagery representing past cultural traumas and memories.</p>
+                </div>
             </div>
         </section>
 
-        <!-- PHASE 4: NATURE LOG & SYMPHONY -->
-        <section id="nature">
-            <h2>Phase 4: The Nature Log and Music Guide</h2>
+        <!-- PHASE 4 SECTION -->
+        <section id="phase-4">
+            <h2>Phase 4: Nature Log & Excursion</h2>
             
-            <img src="f7a75651-9b43-45b6-b7f1-34a5b8704d4b-1_all_2939_2.jpg" alt="A Solitary Yellow Buttercup in Surrey, BC" class="portfolio-img" style="max-width: 500px;">
-
-            <h3>The Nature Log</h3>
-            <div class="nature-log-container">
-                <p><strong>What I Saw:</strong> A Single Yellow Buttercup<br>
-                <strong>Where I Was:</strong> A quiet, wild corner of a backyard garden in Surrey, British Columbia</p>
-                
-                <p>Instead of using difficult science words, I sat on the ground to look closely at a simple buttercup flower. It stands alone in the wind, moving around but staying strong. Its bright yellow petals look like a tiny sun trapped in the dirt.</p>
-                
-                <p>This tiny flower has a quiet strength. It does not care about factories, work, or human goals. By just growing naturally, it fights against the neat, perfect lines that humans try to force onto nature. It is fragile, but it is completely alive.<sup><a href="#fn-12" id="ref-12">12</a></sup></p>
+            <div class="nature-block">
+                <img src="20260619_124114.jpg" alt="Nature Excursion - Yellow Buttercup">
+                <div class="nature-text">
+                    <h3>Field Observation: The Sublime in the Quiet Margins</h3>
+                    <p>
+                        This part records a simple walk outside into nature to take a close look at a single yellow flower growing in the grass. Instead of using science books or looking up strict definitions, this page focuses on how it feels to see nature directly. It shows that taking a moment to notice small details in the world can be incredibly peaceful and meaningful.
+                    </p>
+                </div>
             </div>
-
-            <h3>My Poem</h3>
-            <blockquote style="text-align: center; border-left: none; padding-left: 0;">
-                <strong>The Solitary Fire in the Stalks</strong><br><br>
-                A single spark of gold amidst the green,<br>
-                It stands unbowed beneath the heavy sky,<br>
-                A quiet voice where engine wheels reply,<br>
-                And blooms unseen within the grand machine.<br>
-                No cold equation tracks its vibrant hue,<br>
-                No iron hand can tame its wild design,<br>
-                It drinks the wild, unmeasured, morning dew,<br>
-                And claims the earth by spirit, not by line.<br>
-                Let cities burn their coal and choke the air,<br>
-                And measure life by ticking of the clock;<br>
-                The soul remains in quiet places where<br>
-                The buttercup defies the granite rock.<br>
-                For in its golden petal, small and bright,<br>
-                The universe preserves its sacred light.
-            </blockquote>
-
-            <div class="audio-box">
-                <h4>The Music Guide</h4>
-                <p><strong>The Sound Plan:</strong> Mixing real outdoor sounds (like birds singing and wind blowing) with the free-flowing music of <strong>Beethoven’s <em>Pastoral Symphony (Symphony No. 6)</em></strong>.<sup><a href="#fn-13" id="ref-13">13</a></sup></p>
-                <p><strong>Why this fits:</strong> This music choice fights back against the strict, mathematical music rules of the older generation. Beethoven’s music changes based on pure emotion, just like nature. It perfectly connects a small, personal Canadian backyard to the big feelings of the whole Romantic movement.</p>
-            </div>
-            
-            <div class="footnotes">
-                <ol>
-                    <li id="fn-12">The method of close, intuitive observation of local fauna used here is modeled directly on William Wordsworth's poetic philosophy in his 1802 poem "To the Small Celandine." <a href="#ref-12">&larr;</a></li>
-                    <li id="fn-13">Ludwig van Beethoven, <em>Symphony No. 6 in F Major, Op. 68 ("Pastoral")</em>, composed 1808. <a href="#ref-13">&larr;</a></li>
-                </ol>
-            </div>
-        </section>
-
-        <!-- BIBLIOGRAPHY SECTION -->
-        <section id="bibliography">
-            <h2>Bibliography</h2>
-            <ul class="bibliography-list">
-                <li>Beethoven, Ludwig van. <em>Symphony No. 6 in F Major, Op. 68 ("Pastoral")</em>. Composed 1808.</li>
-                <li>Butler, Marilyn. <em>Romantics, Rebels and Reactionaries: English Literature and its Background 1760-1830</em>. Oxford: Oxford University Press, 1981.</li>
-                <li>Blake, William. <em>The Ancient of Days</em>. 1794. Relief etching with watercolor. British Museum, London. Referenced via "1000030970.jpg".</li>
-                <li>Delacroix, Eugène. <em>Liberty Leading the People</em>. 1830. Oil on canvas. Musée du Louvre, Paris. Referenced via "1000030964.jpg".</li>
-                <li>Ferber, Michael. <em>Romanticism: A Very Short Introduction</em>. Oxford: Oxford University Press, 2010.</li>
-                <li>Friedrich, Caspar David. <em>Wanderer Above the Sea of Fog</em>. 1818. Oil on canvas. Kunsthalle Hamburg, Hamburg. Referenced via "1000030962.jpg".</li>
-                <li>Fuseli, Henry. <em>The Nightmare</em>. 1781. Oil on canvas. Detroit Institute of Arts, Detroit. Referenced via "1000030966.jpg".</li>
-                <li>Goya, Francisco. <em>The Third of May 1808</em>. 1814. Oil on canvas. Museo del Prado, Madrid. Referenced via "1000030972.jpg".</li>
-                <li>Shelley, Percy Bysshe. <em>The Letters of Percy Bysshe Shelley</em>. Edited by Frederick L. Jones. 2 vols. Oxford: Clarendon Press, 1964.</li>
-                <li>Shelley, Percy Bysshe. "The Mask of Anarchy." In <em>The Complete Poetical Works of Percy Bysshe Shelley</em>. London and New York: Oxford University Press, 1914.</li>
-                <li>Turner, J.M.W. <em>The Slave Ship (Slavers Throwing overboard the Dead and Dying, Typhoon Coming On)</em>. 1840. Oil on canvas. Museum of Fine Arts, Boston. Referenced via "1000030968.jpg".</li>
-                <li>Wordsworth, William. "To the Small Celandine." 1802.</li>
-            </ul>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Academic Digital Portfolio.</p>
+        <p>HIST 224 Digital Portfolio Workspace — A Study in Visual and Historical Criticism</p>
     </footer>
 
 </body>
