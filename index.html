@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIST 224 Portfolio: The Romantic Revolution</title>
+    <style>
+        :root {
+            --bg-color: #fcfbf7;
+            --text-color: #2c2520;
+            --accent-color: #8c2d19;
+            --secondary-color: #4a5d4e;
+            --card-bg: #f5f2eb;
+            --border-color: #dcd7cc;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 5rem 2rem 3rem 2rem;
+            background: linear-gradient(rgba(252, 251, 247, 0.9), rgba(252, 251, 247, 1)), url('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=1200&q=80') center/cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: normal;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header .subtitle {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        header .meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #70655c;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+            background-color: var(--bg-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+            scroll-margin-top: 5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: var(--secondary-color);
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 3px solid var(--accent-color);
+            margin: 2rem 0;
+            padding-left: 1.5rem;
+            color: #55483e;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .gallery-card h4 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        .letter-container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            border-radius: 4px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.02);
+        }
+
+        .letter-meta {
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .letter-signature {
+            margin-top: 3rem;
+            text-align: right;
+            font-style: italic;
+        }
+
+        .nature-log-container {
+            border-left: 2px solid var(--secondary-color);
+            padding-left: 2rem;
+            margin-left: 1rem;
+        }
+
+        .audio-box {
+            background-color: #eef2ef;
+            border: 1px solid #cedcd0;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 4px;
+        }
+
+        .audio-box h4 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: #70655c;
+            background-color: var(--card-bg);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px dashed var(--border-color);
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Romantic Revolution</h1>
+        <div class="subtitle">Individualism, Nature, and the Defiance of the Machine</div>
+        <div class="meta">
+            HIST 224: French Revolution to WWI &bull; Prof. Anjali Malhotra
+        </div>
+    </header>
+
+    <nav>
+        <a href="#gallery">Phase 2: Visual Gallery</a>
+        <a href="#letter">Stage 3: Shelley's Letter</a>
+        <a href="#nature">Phase 4: Nature Log & Symphony</a>
+    </nav>
+
+    <main>
+
+        <!-- PHASE 2: VISUAL GALLERY -->
+        <section id="gallery">
+            <h2>Phase 2: Visual Gallery, Theory, and Core Inquiry</h2>
+            
+            <h3>The Core Inquiry</h3>
+            <p><strong>Thesis Statement:</strong> While the "Romantic Revolution" may have stumbled politically in the chaotic, violent wake of the French Revolution, it achieved an enduring, triumphant victory as an intellectual and spiritual awakening. It successfully asserted the invaluable depths of inner human emotion, individual intuition, and spiritual sublimity over the cold, calculated efficiency of an increasingly industrialized and mechanized world.</p>
+
+            <blockquote>
+                "The core friction of the nineteenth century remains the persistent clash between the mechanical, clockwork logic of the Enlightenment Machine and the raw, unmapped freedom of the Romantic Soul."
+            </blockquote>
+
+            <h3>Curated Artworks & Analytical Fragments</h3>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <h4>Francisco Goya &bull; <em>The Third of May 1808</em></h4>
+                    <p>An unflinching exposure of the raw emotional weight of trauma and state-sponsored violence, stripping away the classical, sanitized myths of heroic military glory.</p>
+                </div>
+                <div class="gallery-card">
+                    <h4>William Blake &bull; <em>The Ancient of Days</em></h4>
+                    <p>A profound, complex deep-dive into spiritual symbolism, exploring the cosmic tension between cold, mathematical constraint and the untamed creative spark.</p>
+                </div>
+                <div class="gallery-card">
+                    <h4>Eugène Delacroix &bull; <em>Liberty Leading the People</em></h4>
+                    <p>A vivid capture of raw, kinetic revolutionary passion and collective human yearning, transforming political upheaval into an emotional, mythic crusade.</p>
+                </div>
+                <div class="gallery-card">
+                    <h4>Caspar David Friedrich &bull; <em>Wanderer Above the Sea of Fog</em></h4>
+                    <p>The definitive study in Romantic self-realization and the Burkean sublime, balancing the vast, terrifying majesty of nature against the quiet isolation of the human soul.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Theoretical Framework</h3>
+            <p>Utilizing the theoretical scaffolding of Michael Ferber, this collection traces the post-Revolutionary disillusionment that swept through Europe. As the utopian promises of the Enlightenment collapsed into the Reign of Terror and the rhythmic thrum of industrial machinery, art shifted inward. It became the ultimate battleground for the preservation of human subjectivity against systematic mechanization.</p>
+        </section>
+
+        <!-- STAGE 3: HISTORICAL LETTER -->
+        <section id="letter">
+            <h2>Stage 3: Historical Letter Writing</h2>
+            
+            <div class="letter-container">
+                <div class="letter-meta">
+                    <strong>From:</strong> Percy Bysshe Shelley<br>
+                    <strong>Location:</strong> Pisa, Italy<br>
+                    <strong>Era Context:</strong> The Industrial Revolution & The Aftermath of the Peterloo Massacre (1819)
+                </div>
+
+                <p>My Dearest Friend,</p>
+                
+                <p>I write to you from Pisa, where the air is kissed by the gentle, unhurried breath of the sea, yet my thoughts remain anchored to the choked and soot-stained shores of our homeland. How stark the contrast between this Italian sky and the suffocating canopy of smoke that now blankets the British landscape—a physical manifestation of the moral degradation wrought by our current age of iron and steam.</p>
+                
+                <p>We find ourselves trapped within an institutional tyranny that seeks to reduce the vibrant, infinite tapestry of human existence down to cold, calculated numbers on a ledger. The machine does not merely spin cotton; it grinds down the human spirit, rendering our brothers and sisters mere cogs in an unfeeling engine of profit. The tragic horrors of Peterloo still echo violently in my chest—a brutal testament to what happens when authority values the cold maintenance of order over the sacred pulse of human life.</p>
+                
+                <p>Yet, do not despair. Where the logic of the state fails, the unyielding power of the imagination must rise to take its place. Poetry is not a mere luxury; it is the ultimate weapon of resistance, a mirror that reflects the magnificent, hidden potential of our own collective soul.</p>
+
+                <blockquote>
+                    "Rise like Lions after slumber<br>
+                    In unvanquishable number—<br>
+                    Shake your chains to earth like dew<br>
+                    Which in sleep had fallen on you—<br>
+                    Ye are many—they are few."<br>
+                    <span style="font-size: 0.85rem; font-style: normal; color: #70655c;">— Percy Bysshe Shelley, <em>The Mask of Anarchy</em></span>
+                </blockquote>
+
+                <p>Let them keep their factories and their mathematical certainty. We shall keep the fire of the spirit, and in that unquenchable flame, the old world will eventually burn away to make room for the new.</p>
+
+                <div class="letter-signature">
+                    Your faithful servant,<br>
+                    <span style="font-family: 'Brush Script MT', cursive, serif; font-size: 1.8rem;">Percy Bysshe Shelley</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHASE 4: NATURE LOG & SYMPHONY -->
+        <section id="nature">
+            <h2>Phase 4: The Nature Log and Audio Symphony</h2>
+            
+            <h3>The Nature Log</h3>
+            <div class="nature-log-container">
+                <p><strong>Subject:</strong> A Solitary Yellow Buttercup (<em>Ranunculus acris</em>)<br>
+                <strong>Setting:</strong> A quiet, overgrown corner of a backyard garden in Surrey, British Columbia</p>
+                
+                <p>Leaving behind the rigid, clinical vocabulary of the scientist, I sit on the damp earth to observe a single buttercup. It stands completely exposed, swaying with a fragile yet fierce autonomy at the mercy of a chaotic, shifting wind. Its petals, a brilliant and almost defiant yellow, catch the filtering sunlight like a tiny, localized sun anchored to the soil.</p>
+                
+                <p>There is an intense, quiet energy radiating from this small plant. It exists entirely in the present, completely unconcerned with industrial efficiency, utility, or human purpose. In its solitary existence, it embodies a quiet rebellion against the manicured, orderly symmetry that human hands so often try to force upon the natural world. It is vulnerable, yet it burns with life.</p>
+            </div>
+
+            <h3>Poetic Response</h3>
+            <blockquote style="text-align: center; border-left: none; padding-left: 0;">
+                <strong>The Solitary Fire in the Stalks</strong><br><br>
+                A single spark of gold amidst the green,<br>
+                It stands unbowed beneath the heavy sky,<br>
+                A quiet voice where engine wheels reply,<br>
+                And blooms unseen within the grand machine.<br>
+                No cold equation tracks its vibrant hue,<br>
+                No iron hand can tame its wild design,<br>
+                It drinks the wild, unmeasured, morning dew,<br>
+                And claims the earth by spirit, not by line.<br>
+                Let cities burn their coal and choke the air,<br>
+                And measure life by ticking of the clock;<br>
+                The soul remains in quiet places where<br>
+                The buttercup defies the granite rock.<br>
+                For in its golden petal, small and bright,<br>
+                The universe preserves its sacred light.
+            </blockquote>
+
+            <div class="audio-box">
+                <h4>Auditory Companion: The Audio Symphony Guide</h4>
+                <p><strong>Soundscape pairing:</strong> Raw, localized backyard environmental audio (birds, wind rustling the grass) interlaced with the fluid, unrestrained movements of <strong>Ludwig van Beethoven’s <em>Pastoral Symphony (Symphony No. 6)</em></strong>.</p>
+                <p><strong>Rationale:</strong> This specific auditory pairing serves as a direct rejection of the rigid, mathematical symmetry that defined Enlightenment-era musical structures. Beethoven’s fluid, emotionally expressive shifts capture the unpredictable, organic essence of the natural environment, seamlessly bridging the gap between the deeply personal space of a local Canadian backyard and the expansive, universal scale of the global Romantic movement.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Academic Digital Portfolio. Built using Chicago Manual of Style (CMS) Footnote Frameworks.</p>
+    </footer>
+
+</body>
+</html>
