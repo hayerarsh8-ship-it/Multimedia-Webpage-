@@ -3,196 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</title>
+    <title>The Romantic Revolution - Multimedia Portfolio</title>
     <style>
         body {
             font-family: 'Georgia', serif;
-            line-height: 1.7;
-            background-color: #f4f3ef;
-            color: #232323;
+            line-height: 1.6;
+            background-color: #f5f4f0;
+            color: #2c2c2c;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #141414;
-            color: #eae5da;
+            background-color: #1a1a1a;
+            color: #e6e0d4;
             text-align: center;
-            padding: 50px 20px 40px 20px;
-            border-bottom: 4px solid #721c24;
+            padding: 40px 20px;
+            border-bottom: 4px solid #8b0000;
         }
         header h1 {
             margin: 0;
-            font-size: 2.4em;
-            letter-spacing: 0.5px;
-            font-weight: normal;
-        }
-        .author-info {
-            margin-top: 15px;
-            font-size: 1.1em;
-            color: #c5bfae;
+            font-size: 2.5em;
             letter-spacing: 1px;
         }
-        header p.subtitle {
-            font-style: italic;
+        .author-info {
             margin-top: 10px;
-            color: #9a9384;
-            font-size: 1.05em;
+            font-size: 1.1em;
+            color: #b3a998;
+        }
+        header p {
+            font-style: italic;
+            margin-top: 5px;
+            color: #b3a998;
         }
         nav {
-            background-color: #222222;
+            background-color: #2b2b2b;
             text-align: center;
-            padding: 12px;
+            padding: 10px;
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid #333;
         }
         nav a {
-            color: #dfdad0;
+            color: #fff;
             text-decoration: none;
-            margin: 0 18px;
-            font-size: 0.9em;
+            margin: 0 15px;
+            font-size: 0.95em;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
         }
         nav a:hover {
-            color: #a71d2a;
+            color: #8b0000;
         }
         main {
             max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 25px;
+            margin: 30px auto;
+            padding: 0 20px;
         }
         section {
             background: #ffffff;
-            border: 1px solid #e2dbcc;
-            border-radius: 3px;
-            padding: 35px;
-            margin-bottom: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+            border: 1px solid #e1dbcd;
+            border-radius: 4px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
         h2 {
-            color: #721c24;
-            border-bottom: 1px solid #d6cbb5;
-            padding-bottom: 10px;
+            color: #8b0000;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 8px;
             margin-top: 0;
-            font-weight: normal;
-            font-size: 1.8em;
         }
         .intro-text {
-            font-size: 1.05em;
-            color: #4a4a4a;
-            margin-bottom: 30px;
-            font-style: italic;
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 25px;
         }
-        /* Phase 2 Layout */
+        /* Phase 2 Grid layout */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
-        }
-        .gallery-card {
-            background: #fbfbfa;
-            border: 1px solid #e8e3d7;
-            border-radius: 3px;
-            padding: 18px;
-        }
-        .gallery-card img {
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-            border: 1px solid #dcd5c5;
-        }
-        .gallery-card h3 {
-            margin: 15px 0 8px 0;
-            font-size: 1.2em;
-            color: #111;
-            font-weight: normal;
-        }
-        .gallery-card p {
-            font-size: 0.95em;
-            color: #444;
-            margin: 0;
-            line-height: 1.5;
-        }
-        /* Phase 3 Layout */
-        .gothic-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
             margin-top: 20px;
         }
-        .gothic-card {
-            text-align: center;
-            background: #fafaf9;
+        .gallery-card {
+            background: #faf9f6;
+            border: 1px solid #e6e1d6;
+            border-radius: 4px;
             padding: 15px;
-            border: 1px solid #e1dbcd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
         }
-        .gothic-card img {
+        .gallery-card img {
             width: 100%;
-            height: 290px;
-            object-fit: cover;
-            border: 1px solid #222;
+            height: auto;
+            border-radius: 2px;
         }
-        .gothic-card p {
-            font-size: 0.95em;
-            margin-top: 10px;
-            color: #222;
+        .gallery-card h3 {
+            margin: 12px 0 6px 0;
+            font-size: 1.15em;
+            color: #1a1a1a;
         }
-        /* Phase 4 Layout */
-        .nature-block {
+        .gallery-card p {
+            font-size: 0.9em;
+            color: #555;
+            margin: 0;
+        }
+        /* Phase 3 layout */
+        .gothic-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: #fbfbfa;
-            border: 1px solid #e8e3d7;
-            padding: 30px;
-            border-radius: 3px;
+            gap: 20px;
+        }
+        .gothic-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #333;
+        }
+        /* Phase 4 Layout */
+        .nature-block {
+            text-align: center;
+            background: #faf9f6;
+            border: 1px solid #e6e1d6;
+            padding: 25px;
+            border-radius: 4px;
         }
         .nature-block img {
             max-width: 100%;
-            max-height: 480px;
-            border: 1px solid #dcd5c5;
-            margin-bottom: 25px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .nature-text {
-            max-width: 750px;
-        }
-        .nature-text h3 {
-            font-weight: normal;
-            font-size: 1.3em;
-            margin-top: 0;
-            color: #111;
-            text-align: center;
-        }
-        .nature-text p {
-            color: #333;
-            margin: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
         }
         footer {
             text-align: center;
-            padding: 35px;
-            background-color: #141414;
-            color: #777;
+            padding: 30px;
+            background-color: #1a1a1a;
+            color: #888;
             font-size: 0.85em;
-            margin-top: 70px;
-            border-top: 3px solid #721c24;
+            margin-top: 60px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</h1>
-        <div class="author-info">Arshdeep Singh &nbsp;|&nbsp; 10135404</div>
-        <p class="subtitle">A Digital Curatorial Project Tracking the Fractures of Reason, Political Insurgency, and the Sublime</p>
+        <h1>The Romantic Revolution</h1>
+        <div class="author-info">Arshdeep Singh — 10135404</div>
+        <p>A Multimedia Exploration of Emotion, Individualism, and the Sublime</p>
     </header>
 
     <nav>
-        <a href="#phase-2">Phase 2: Visual Curation</a>
-        <a href="#phase-3">Phase 3: The Gothic & Irrational</a>
-        <a href="#phase-4">Phase 4: Nature Log Excursion</a>
+        <a href="#phase-2">Phase 2: Gallery</a>
+        <a href="#phase-3">Phase 3: The Gothic</a>
+        <a href="#phase-4">Phase 4: Nature Log</a>
     </nav>
 
     <main>
@@ -200,43 +168,43 @@
         <!-- PHASE 2 SECTION -->
         <section id="phase-2">
             <h2>Phase 2: The Romantic Revolution Gallery</h2>
-            <p class="intro-text">This curation tracks the collapse of cold Enlightenment empiricism, highlighting art that mirrors the explosive rise of individual imagination, inner turmoil, and political rebellion against rigid systemic constraints.</p>
+            <p class="intro-text">Exploring individualism, emotional intensity, nature, and political rebellion.</p>
             
             <div class="gallery-grid">
                 <div class="gallery-card">
                     <img src="1000030962.jpg" alt="Wanderer above the Sea of Fog">
                     <h3>Wanderer above the Sea of Fog</h3>
-                    <p><strong>Caspar David Friedrich</strong> — A profound study of psychological insularity and the sublime. The vast, mist-shrouded chasm represents the internal landscape of the solitary individual confronting the infinite, unmeasurable scale of the natural world.</p>
+                    <p>Caspar David Friedrich — Capturing the sublime scale of nature and internal contemplation.</p>
                 </div>
 
                 <div class="gallery-card">
                     <img src="1000030964.jpg" alt="Liberty Leading the People">
                     <h3>Liberty Leading the People</h3>
-                    <p><strong>Eugène Delacroix</strong> — Raw political defiance and emotional insurgency direct from the barricades. Delacroix discards classical restraint to capture the fierce, destabilizing collective energy of human revolution and the pursuit of autonomy.</p>
+                    <p>Eugène Delacroix — Revolution, political passion, and the fierce drive for freedom.</p>
                 </div>
 
                 <div class="gallery-card">
                     <img src="1000030966.jpg" alt="The Nightmare">
                     <h3>The Nightmare</h3>
-                    <p><strong>Henry Fuseli</strong> — A descent into the primal unconscious. By centering the dream space and active vulnerability, Fuseli exposes the dark psychological undercurrents and irrational terrors that reason seeks to suppress.</p>
+                    <p>Henry Fuseli — Peering into the subconscious, dark psychological states, and dreams.</p>
                 </div>
 
                 <div class="gallery-card">
                     <img src="1000030968.jpg" alt="The Slave Ship">
                     <h3>The Slave Ship</h3>
-                    <p><strong>J.M.W. Turner</strong> — A visceral, swirling indictment of industrial-era human cruelty clashing with a chaotic, uncontainable sea. The violent textures and blazing colors render systemic moral atrocity inseparable from the terrifying wrath of nature.</p>
+                    <p>J.M.W. Turner — Swirling, emotional brushwork displaying the chaotic forces of both nature and human tragedy.</p>
                 </div>
 
                 <div class="gallery-card">
                     <img src="1000030970.jpg" alt="The Ancient of Days">
                     <h3>The Ancient of Days</h3>
-                    <p><strong>William Blake</strong> — A radical vision of cosmic creation and constraint. Blake's distinct mythology critiques the rigid architectural structures of geometric order, championing the boundless, visionary potential of the poetic mind instead.</p>
+                    <p>William Blake — Blending highly personalized mythologies, cosmic vision, and poetic imagination.</p>
                 </div>
 
                 <div class="gallery-card">
                     <img src="1000030972.jpg" alt="The Third of May 1808">
                     <h3>The Third of May 1808</h3>
-                    <p><strong>Francisco Goya</strong> — A stark, traumatic confrontation with the horrors of military state execution. Goya strips away the false heroism of warfare, exposing the mechanical, faceless nature of violence inflicted upon the defenseless individual.</p>
+                    <p>Francisco Goya — Raw horror, anti-war sentiment, and the devastating cost of conflict.</p>
                 </div>
             </div>
         </section>
@@ -244,38 +212,23 @@
         <!-- PHASE 3 SECTION -->
         <section id="phase-3">
             <h2>Phase 3: The Gothic & Irrational</h2>
-            <p class="intro-text">An interrogation of folklore, supernatural dread, and the deeply fractured 'Shadow Self.' This space examines the volatile terrors that lurk just beneath the surface of civilized society and historical trauma.</p>
-            
             <div class="gothic-container">
-                <div class="gothic-card">
-                    <img src="1000031597.jpg" alt="The Nightmare">
-                    <p><strong>The Nightmare</strong><br>Henry Fuseli</p>
-                </div>
-                <div class="gothic-card">
-                    <img src="1000031599.jpg" alt="Saturn Devouring His Son">
-                    <p><strong>Saturn Devouring His Son</strong><br>Francisco Goya</p>
-                </div>
-                <div class="gothic-card">
-                    <img src="1000031603.jpg" alt="Demon Seated">
-                    <p><strong>Demon Seated</strong><br>Mikhail Vrubel</p>
-                </div>
-                <div class="gothic-card">
-                    <img src="1000031601.jpg" alt="The Ghost of Barbara Radziwiłł">
-                    <p><strong>The Ghost of Barbara Radziwiłł</strong><br>Wojciech Gerson</p>
-                </div>
+                <img src="1000031597.jpg" alt="The Nightmare">
+                <img src="1000031599.jpg" alt="Saturn Devouring His Son">
+                <img src="1000031603.jpg" alt="Demon Seated">
+                <img src="1000031601.jpg" alt="The Ghost of Barbara Radziwiłł">
             </div>
         </section>
 
         <!-- PHASE 4 SECTION -->
         <section id="phase-4">
             <h2>Phase 4: Nature Log & Excursion</h2>
-            
             <div class="nature-block">
                 <img src="1000032107.jpg" alt="Nature Excursion - Yellow Buttercup">
                 <div class="nature-text">
-                    <h3>Field Observation: The Sublime in the Quiet Margins</h3>
+                    <h3>Field Observation: The Sublime in the Small</h3>
                     <p>
-                        This deliberate excursion into the local ecosystem isolates a single, vibrant bloom thriving amidst uncultivated grass. Aligned with the core tenets of Romanticism, this log serves as a defense against industrial detachment and rigid scientific categorization. By emphasizing unmediated, immediate sensory contact over cold analytical detachment, this observation records the intense, personal resonance found in the organic textures and isolated patterns of the natural world.
+                        An intentional excursion into the local ecosystem, capturing the vivid contrast of wild growth blooming amidst the grass. True to the principles of Romanticism, this log emphasizes personal observation over abstract scientific categorization—focusing on the vibrant emotional response evoked by the simplicity and organic beauty of the natural world.
                     </p>
                 </div>
             </div>
@@ -284,8 +237,9 @@
     </main>
 
     <footer>
-        <p>HIST 224 Digital Portfolio Workspace — A Study in Visual and Historical Criticism</p>
+        <p>Multimedia Webpage Project — Historical & Visual Analysis Workspace</p>
     </footer>
 
 </body>
 </html>
+
