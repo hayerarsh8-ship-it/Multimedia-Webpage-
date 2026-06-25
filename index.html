@@ -1,94 +1,292 @@
-<!-- Author Identification Info -->
-<div style="text-align: center; margin-top: 20px; margin-bottom: 30px; font-family: 'Georgia', serif;">
-    <h1 style="margin: 0; color: #111; font-size: 2em;">The Romantic Revolution Portfolio</h1>
-    <h3 style="margin: 5px 0 0 0; color: #333; font-weight: normal;">Arshdeep Singh</h3>
-    <p style="margin: 5px 0 0 0; color: #666; font-style: italic;">Student ID: 10135404</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            background-color: #f4f3ef;
+            color: #232323;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #141414;
+            color: #eae5da;
+            text-align: center;
+            padding: 50px 20px 40px 20px;
+            border-bottom: 4px solid #721c24;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.4em;
+            letter-spacing: 0.5px;
+            font-weight: normal;
+        }
+        .author-info {
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #c5bfae;
+            letter-spacing: 1px;
+        }
+        header p.subtitle {
+            font-style: italic;
+            margin-top: 10px;
+            color: #9a9384;
+            font-size: 1.05em;
+        }
+        nav {
+            background-color: #222222;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: #dfdad0;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        nav a:hover {
+            color: #a71d2a;
+        }
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 25px;
+        }
+        section {
+            background: #ffffff;
+            border: 1px solid #e2dbcc;
+            border-radius: 3px;
+            padding: 35px;
+            margin-bottom: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.01);
+        }
+        h2 {
+            color: #721c24;
+            border-bottom: 1px solid #d6cbb5;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-weight: normal;
+            font-size: 1.8em;
+        }
+        .intro-text {
+            font-size: 1.05em;
+            color: #4a4a4a;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        /* Phase 2 Layout */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .gallery-card {
+            background: #fbfbfa;
+            border: 1px solid #e8e3d7;
+            border-radius: 3px;
+            padding: 18px;
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border: 1px solid #dcd5c5;
+        }
+        .gallery-card h3 {
+            margin: 15px 0 8px 0;
+            font-size: 1.2em;
+            color: #111;
+            font-weight: normal;
+        }
+        .gallery-card p {
+            font-size: 0.95em;
+            color: #444;
+            margin: 0;
+            line-height: 1.5;
+        }
+        /* Phase 3 Layout */
+        .gothic-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .gothic-card {
+            text-align: center;
+            background: #fafaf9;
+            padding: 15px;
+            border: 1px solid #e1dbcd;
+        }
+        .gothic-card img {
+            width: 100%;
+            height: 290px;
+            object-fit: cover;
+            border: 1px solid #222;
+        }
+        .gothic-card p {
+            font-size: 0.95em;
+            margin-top: 10px;
+            color: #222;
+        }
+        /* Phase 4 Layout */
+        .nature-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fbfbfa;
+            border: 1px solid #e8e3d7;
+            padding: 30px;
+            border-radius: 3px;
+        }
+        .nature-block img {
+            max-width: 100%;
+            max-height: 480px;
+            border: 1px solid #dcd5c5;
+            margin-bottom: 25px;
+        }
+        .nature-text {
+            max-width: 750px;
+        }
+        .nature-text h3 {
+            font-weight: normal;
+            font-size: 1.3em;
+            margin-top: 0;
+            color: #111;
+            text-align: center;
+        }
+        .nature-text p {
+            color: #333;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 35px;
+            background-color: #141414;
+            color: #777;
+            font-size: 0.85em;
+            margin-top: 70px;
+            border-top: 3px solid #721c24;
+        }
+    </style>
+</head>
+<body>
 
-<hr style="border: 0; border-top: 1px solid #ccc; margin-bottom: 40px;">
+    <header>
+        <h1>Echoes of the Unconscious: The Romantic Defiance and Gothic Shadows</h1>
+        <div class="author-info">Arshdeep Singh &nbsp;|&nbsp; 10135404</div>
+        <p class="subtitle">A Digital Curatorial Project Tracking the Fractures of Reason, Political Insurgency, and the Sublime</p>
+    </header>
 
-<!-- PHASE 2 SECTION -->
-<section id="phase-2" style="margin-bottom: 50px;">
-    <h2 style="font-family: 'Georgia', serif; color: #8b0000; border-bottom: 2px solid #8b0000; padding-bottom: 8px;">Phase 2: The Romantic Revolution Gallery</h2>
-    <p style="font-family: 'Georgia', serif; font-style: italic; color: #555;">Exploring individualism, emotional intensity, nature, and political rebellion.</p>
-    
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; font-family: 'Georgia', serif; margin-top: 20px;">
-        <!-- Image 1 -->
-        <div style="max-width: 100%; text-align: center;">
-            <img src="1000030962.jpg" alt="Wanderer above the Sea of Fog" style="max-width: 100%; height: auto; border: 2px solid #333;">
-            <h4 style="margin: 10px 0 2px 0;">Wanderer above the Sea of Fog</h4>
-            <p style="margin: 0; color: #555; font-size: 0.9em;">Caspar David Friedrich — Capturing the sublime scale of nature and internal contemplation.</p>
-        </div>
+    <nav>
+        <a href="#phase-2">Phase 2: Visual Curation</a>
+        <a href="#phase-3">Phase 3: The Gothic & Irrational</a>
+        <a href="#phase-4">Nature Log Excursion</a>
+    </nav>
 
-        <!-- Image 2 -->
-        <div style="max-width: 100%; text-align: center;">
-            <img src="1000030964.jpg" alt="Liberty Leading the People" style="max-width: 100%; height: auto; border: 2px solid #333;">
-            <h4 style="margin: 10px 0 2px 0;">Liberty Leading the People</h4>
-            <p style="margin: 0; color: #555; font-size: 0.9em;">Eugène Delacroix — Revolution, political passion, and the fierce drive for freedom.</p>
-        </div>
+    <main>
 
-        <!-- Image 3 -->
-        <div style="max-width: 100%; text-align: center;">
-            <img src="1000030966.jpg" alt="The Nightmare" style="max-width: 100%; height: auto; border: 2px solid #333;">
-            <h4 style="margin: 10px 0 2px 0;">The Nightmare</h4>
-            <p style="margin: 0; color: #555; font-size: 0.9em;">Henry Fuseli — Peering into the subconscious, dark psychological states, and dreams.</p>
-        </div>
+        <!-- PHASE 2 SECTION -->
+        <section id="phase-2">
+            <h2>Phase 2: The Romantic Revolution Gallery</h2>
+            <p class="intro-text">This gallery shows how art moved away from strict rules and logic. Instead, it focuses on strong personal feelings, imagination, and people fighting back against unfair control.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="1000030962.jpg" alt="Wanderer above the Sea of Fog">
+                    <h3>Wanderer above the Sea of Fog</h3>
+                    <p><strong>Caspar David Friedrich</strong> — This painting shows a lonely person looking out at a huge, foggy view. It represents how deep and complicated our inner thoughts can feel when we look at huge spaces in nature.</p>
+                </div>
 
-        <!-- Image 4 -->
-        <div style="max-width: 100%; text-align: center;">
-            <img src="1000030968.jpg" alt="The Slave Ship" style="max-width: 100%; height: auto; border: 2px solid #333;">
-            <h4 style="margin: 10px 0 2px 0;">The Slave Ship</h4>
-            <p style="margin: 0; color: #555; font-size: 0.9em;">J.M.W. Turner — Swirling, emotional brushwork displaying the chaotic forces of both nature and human tragedy.</p>
-        </div>
+                <div class="gallery-card">
+                    <img src="1000030964.jpg" alt="Liberty Leading the People">
+                    <h3>Liberty Leading the People</h3>
+                    <p><strong>Eugène Delacroix</strong> — This shows people fighting for their freedom during a revolution. The artist leaves behind calm styles to show the wild, loud energy of regular people coming together to stand up for themselves.</p>
+                </div>
 
-        <!-- Image 5 -->
-        <div style="max-width: 100%; text-align: center;">
-            <img src="1000030970.jpg" alt="The Ancient of Days" style="max-width: 100%; height: auto; border: 2px solid #333;">
-            <h4 style="margin: 10px 0 2px 0;">The Ancient of Days</h4>
-            <p style="margin: 0; color: #555; font-size: 0.9em;">William Blake — Blending highly personalized mythologies, cosmic vision, and poetic imagination.</p>
-        </div>
+                <div class="gallery-card">
+                    <img src="1000030966.jpg" alt="The Nightmare">
+                    <h3>The Nightmare</h3>
+                    <p><strong>Henry Fuseli</strong> — A look into our scary dreams and thoughts. By focusing on a bad dream, this painting shows the dark feelings and fears inside our minds that logic cannot easily explain.</p>
+                </div>
 
-        <!-- Image 6 -->
-        <div style="max-width: 100%; text-align: center;">
-            <img src="1000030972.jpg" alt="The Third of May 1808" style="max-width: 100%; height: auto; border: 2px solid #333;">
-            <h4 style="margin: 10px 0 2px 0;">The Third of May 1808</h4>
-            <p style="margin: 0; color: #555; font-size: 0.9em;">Francisco Goya — Raw horror, anti-war sentiment, and the devastating cost of conflict.</p>
-        </div>
-    </div>
-</section>
+                <div class="gallery-card">
+                    <img src="1000030968.jpg" alt="The Slave Ship">
+                    <h3>The Slave Ship</h3>
+                    <p><strong>J.M.W. Turner</strong> — A powerful painting that shows how cruel humans can be to each other, mixed with a wild, angry ocean. The bright colors and messy paint make the tragedy feel very real and scary.</p>
+                </div>
 
-<hr style="border: 0; border-top: 1px solid #ccc; margin-bottom: 40px;">
+                <div class="gallery-card">
+                    <img src="1000030970.jpg" alt="The Ancient of Days">
+                    <h3>The Ancient of Days</h3>
+                    <p><strong>William Blake</strong> — This artwork shows a god-like figure creating the world using strict math tools. The artist wanted to criticize tight rules and show that the creative mind should be completely free instead.</p>
+                </div>
 
-<!-- PHASE 3 SECTION -->
-<section id="phase-3" style="margin-bottom: 50px;">
-    <h2 style="font-family: 'Georgia', serif; color: #8b0000; border-bottom: 2px solid #8b0000; padding-bottom: 8px;">Phase 3: The Gothic & Irrational</h2>
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 20px;">
-        <!-- Image 1 -->
-        <img src="1000031597.jpg" alt="The Nightmare" style="max-width: 100%; height: auto; border: 2px solid #333;">
-        
-        <!-- Image 2 -->
-        <img src="1000031599.jpg" alt="Saturn Devouring His Son" style="max-width: 100%; height: auto; border: 2px solid #333;">
-        
-        <!-- Image 3 -->
-        <img src="1000031603.jpg" alt="Demon Seated" style="max-width: 100%; height: auto; border: 2px solid #333;">
-        
-        <!-- Image 4 -->
-        <img src="1000031601.jpg" alt="The Ghost of Barbara Radziwiłł" style="max-width: 100%; height: auto; border: 2px solid #333;">
-    </div>
-</section>
+                <div class="gallery-card">
+                    <img src="1000030972.jpg" alt="The Third of May 1808">
+                    <h3>The Third of May 1808</h3>
+                    <p><strong>Francisco Goya</strong> — A sad and direct look at soldiers shooting innocent citizens. The artist does not make war look heroic; instead, he shows the scary, cold reality of violence against normal people.</p>
+                </div>
+            </div>
+        </section>
 
-<hr style="border: 0; border-top: 1px solid #ccc; margin-bottom: 40px;">
+        <!-- PHASE 3 SECTION -->
+        <section id="phase-3">
+            <h2>Phase 3: The Gothic & Irrational</h2>
+            <p class="intro-text">This section looks at spooky old stories, ghosts, and the dark, hidden sides of our minds. It explores the fears that stay under the surface of our quiet everyday lives.</p>
+            
+            <div class="gothic-container">
+                <div class="gothic-card">
+                    <img src="1000031597.jpg" alt="The Nightmare">
+                    <p><strong>The Nightmare</strong><br>Henry Fuseli</p>
+                </div>
+                <div class="gothic-card">
+                    <img src="1000031599.jpg" alt="Saturn Devouring His Son">
+                    <p><strong>Saturn Devouring His Son</strong><br>Francisco Goya</p>
+                </div>
+                <div class="gothic-card">
+                    <img src="1000031603.jpg" alt="Demon Seated">
+                    <p><strong>Demon Seated</strong><br>Mikhail Vrubel</p>
+                </div>
+                <div class="gothic-card">
+                    <img src="1000031601.jpg" alt="The Ghost of Barbara Radziwiłł">
+                    <p><strong>The Ghost of Barbara Radziwiłł</strong><br>Wojciech Gerson</p>
+                </div>
+            </div>
+        </section>
 
-<!-- PHASE 4 SECTION -->
-<section id="phase-4" style="margin-bottom: 50px;">
-    <h2 style="font-family: 'Georgia', serif; color: #8b0000; border-bottom: 2px solid #8b0000; padding-bottom: 8px;">Phase 4: Nature Log & Excursion</h2>
-    <div style="display: flex; flex-direction: column; align-items: center; text-align: center; font-family: 'Georgia', serif; margin-top: 20px;">
-        <img src="1000032107.jpg" alt="Nature Excursion - Yellow Buttercup" style="max-width: 100%; height: auto; border: 2px solid #333; margin-bottom: 20px;">
-        <div style="text-align: left; max-width: 600px; margin: 0 auto;">
-            <h3 style="margin-top: 0;">Field Observation: The Sublime in the Small</h3>
-            <p style="line-height: 1.6; color: #333;">
-                An intentional excursion into the local ecosystem, capturing the vivid contrast of wild growth blooming amidst the grass. True to the principles of Romanticism, this log emphasizes personal observation over abstract scientific categorization—focusing on the vibrant emotional response evoked by the simplicity and organic beauty of the natural world.
-            </p>
-        </div>
-    </div>
-</section>
+        <!-- PHASE 4 SECTION -->
+        <section id="phase-4">
+            <h2>Phase 4: Nature Log & Excursion</h2>
+            
+            <div class="nature-block">
+                <img src="1000032107.jpg" alt="Nature Excursion - Yellow Buttercup">
+                <div class="nature-text">
+                    <h3>Field Observation: The Sublime in the Quiet Margins</h3>
+                    <p>
+                        This part records a simple walk outside into nature to take a close look at a single yellow flower growing in the grass. Instead of using science books or looking up strict definitions, this page focuses on how it feels to see nature directly. It shows that taking a moment to notice small details in the world can be incredibly peaceful and meaningful.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>HIST 224 Digital Portfolio Workspace — A Study in Visual and Historical Criticism</p>
+    </footer>
+
+</body>
+</html>
+
