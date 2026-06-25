@@ -111,17 +111,6 @@
             text-align: justify;
         }
 
-        sup {
-            font-size: 0.75rem;
-            line-height: 0;
-        }
-
-        sup a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
         blockquote {
             font-style: italic;
             border-left: 3px solid var(--accent-color);
@@ -142,18 +131,12 @@
             border: 1px solid var(--border-color);
             padding: 1.5rem;
             border-radius: 4px;
-            display: flex;
-            flex-direction: column;
         }
 
-        .gallery-card img {
-            width: 100%;
-            height: auto;
-            max-height: 250px;
-            object-fit: cover;
-            border-radius: 2px;
-            margin-bottom: 1rem;
-            border: 1px solid var(--border-color);
+        .gallery-card h4 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.1rem;
         }
 
         .letter-container {
@@ -162,7 +145,6 @@
             padding: 3rem;
             border-radius: 4px;
             box-shadow: inset 0 0 20px rgba(0,0,0,0.02);
-            margin-bottom: 2rem;
         }
 
         .letter-meta {
@@ -195,36 +177,6 @@
             color: var(--secondary-color);
         }
 
-        .citation-section {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 2.5rem;
-            border-radius: 4px;
-            font-size: 0.95rem;
-        }
-
-        .citation-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin-bottom: 2rem;
-        }
-
-        .citation-list li {
-            margin-bottom: 0.75rem;
-            text-indent: -2em;
-            padding-left: 2em;
-            text-align: justify;
-        }
-
-        .footnote-list {
-            padding-left: 1.5rem;
-        }
-
-        .footnote-list li {
-            margin-bottom: 0.5rem;
-            text-align: justify;
-        }
-
         footer {
             text-align: center;
             padding: 3rem;
@@ -254,8 +206,7 @@
     <nav>
         <a href="#gallery">Phase 2: Visual Gallery</a>
         <a href="#letter">Stage 3: Shelley's Letter</a>
-        <a href="#nature">Phase 4: Nature Log</a>
-        <a href="#citations">Sources & Frameworks</a>
+        <a href="#nature">Phase 4: Nature Log & Symphony</a>
     </nav>
 
     <main>
@@ -265,7 +216,7 @@
             <h2>Phase 2: Visual Gallery, Theory, and Core Inquiry</h2>
             
             <h3>The Core Inquiry</h3>
-            <p><strong>Thesis Statement:</strong> While the "Romantic Revolution" may have stumbled politically in the chaotic, violent wake of the French Revolution, it achieved an enduring, triumphant victory as an intellectual and spiritual awakening. It successfully asserted the invaluable depths of inner human emotion, individual intuition, and spiritual sublimity over the cold, calculated efficiency of an increasingly industrialized and mechanized world.<sup><a href="#fn1" id="ref1">1</a></sup></p>
+            <p><strong>Thesis Statement:</strong> While the "Romantic Revolution" may have stumbled politically in the chaotic, violent wake of the French Revolution, it achieved an enduring, triumphant victory as an intellectual and spiritual awakening. It successfully asserted the invaluable depths of inner human emotion, individual intuition, and spiritual sublimity over the cold, calculated efficiency of an increasingly industrialized and mechanized world.</p>
 
             <blockquote>
                 "The core friction of the nineteenth century remains the persistent clash between the mechanical, clockwork logic of the Enlightenment Machine and the raw, unmapped freedom of the Romantic Soul."
@@ -274,41 +225,27 @@
             <h3>Curated Artworks & Analytical Fragments</h3>
             <div class="gallery-grid">
                 <div class="gallery-card">
-                    <img src="1000030962.jpg" alt="Caspar David Friedrich - Wanderer Above the Sea of Fog">
-                    <h4>Caspar David Friedrich &bull; <em>Wanderer Above the Sea of Fog</em></h4>
-                    <p>The definitive study in Romantic self-realization and the Burkean sublime, balancing the vast, terrifying majesty of nature against the quiet isolation of the human soul.<sup><a href="#fn2" id="ref2">2</a></sup></p>
+                    <h4>Francisco Goya &bull; <em>The Third of May 1808</em></h4>
+                    <p>An unflinching exposure of the raw emotional weight of trauma and state-sponsored violence, stripping away the classical, sanitized myths of heroic military glory.</p>
                 </div>
                 <div class="gallery-card">
-                    <img src="1000030964.jpg" alt="Eugène Delacroix - Liberty Leading the People">
-                    <h4>Eugène Delacroix &bull; <em>Liberty Leading the People</em></h4>
-                    <p>A vivid capture of raw, kinetic revolutionary passion and collective human yearning, transforming political upheaval into an emotional, mythic crusade.</p>
-                </div>
-                <div class="gallery-card">
-                    <img src="1000030966.jpg" alt="Henry Fuseli - The Nightmare">
-                    <h4>Henry Fuseli &bull; <em>The Nightmare</em></h4>
-                    <p>An exploration into the haunting depths of the human subconscious, uncovering the dark, irrational spaces that defy Enlightenment categorization.<sup><a href="#fn3" id="ref3">3</a></sup></p>
-                </div>
-                <div class="gallery-card">
-                    <img src="1000030968.jpg" alt="J.M.W. Turner - The Slave Ship">
-                    <h4>J.M.W. Turner &bull; <em>The Slave Ship</em></h4>
-                    <p>A swirling vortex of color and cosmic fury, rendering the terrifying elemental power of nature alongside a harrowing critique of human cruelty.</p>
-                </div>
-                <div class="gallery-card">
-                    <img src="1000030970.jpg" alt="William Blake - The Ancient of Days">
                     <h4>William Blake &bull; <em>The Ancient of Days</em></h4>
                     <p>A profound, complex deep-dive into spiritual symbolism, exploring the cosmic tension between cold, mathematical constraint and the untamed creative spark.</p>
                 </div>
                 <div class="gallery-card">
-                    <img src="1000030972.jpg" alt="Francisco Goya - The Third of May 1808">
-                    <h4>Francisco Goya &bull; <em>The Third of May 1808</em></h4>
-                    <p>An unflinching exposure of the raw emotional weight of trauma and state-sponsored violence, stripping away the classical, sanitized myths of heroic military glory.</p>
+                    <h4>Eugène Delacroix &bull; <em>Liberty Leading the People</em></h4>
+                    <p>A vivid capture of raw, kinetic revolutionary passion and collective human yearning, transforming political upheaval into an emotional, mythic crusade.</p>
+                </div>
+                <div class="gallery-card">
+                    <h4>Caspar David Friedrich &bull; <em>Wanderer Above the Sea of Fog</em></h4>
+                    <p>The definitive study in Romantic self-realization and the Burkean sublime, balancing the vast, terrifying majesty of nature against the quiet isolation of the human soul.</p>
                 </div>
             </div>
 
             <hr>
 
             <h3>Theoretical Framework</h3>
-            <p>Utilizing the theoretical scaffolding of Michael Ferber, this collection traces the post-Revolutionary disillusionment that swept through Europe.<sup><a href="#fn4" id="ref4">4</a></sup> As the utopian promises of the Enlightenment collapsed into the Reign of Terror and the rhythmic thrum of industrial machinery, art shifted inward. It became the ultimate battleground for the preservation of human subjectivity against systematic mechanization.</p>
+            <p>Utilizing the theoretical scaffolding of Michael Ferber, this collection traces the post-Revolutionary disillusionment that swept through Europe. As the utopian promises of the Enlightenment collapsed into the Reign of Terror and the rhythmic thrum of industrial machinery, art shifted inward. It became the ultimate battleground for the preservation of human subjectivity against systematic mechanization.</p>
         </section>
 
         <!-- STAGE 3: HISTORICAL LETTER -->
@@ -324,9 +261,9 @@
 
                 <p>My Dearest Friend,</p>
                 
-                <p>I write to you from Pisa, where the air is kissed by the gentle, unhurried breath of the sea, yet my thoughts remain anchored to the choked and soot-stained shores of our homeland. How stark the contrast between this Italian sky and the suffocating canopy of smoke that now blankets the British landscape—a physical manifestation of the moral degradation wrought by our current age of iron and steam.<sup><a href="#fn5" id="ref5">5</a></sup></p>
+                <p>I write to you from Pisa, where the air is kissed by the gentle, unhurried breath of the sea, yet my thoughts remain anchored to the choked and soot-stained shores of our homeland. How stark the contrast between this Italian sky and the suffocating canopy of smoke that now blankets the British landscape—a physical manifestation of the moral degradation wrought by our current age of iron and steam.</p>
                 
-                <p>We find ourselves trapped within an institutional tyranny that seeks to reduce the vibrant, infinite tapestry of human existence down to cold, calculated numbers on a ledger. The machine does not merely spin cotton; it grinds down the human spirit, rendering our brothers and sisters mere cogs in an unfeeling engine of profit. The tragic horrors of Peterloo still echo violently in my chest—a brutal testament to what happens when authority values the cold maintenance of order over the sacred pulse of human life.<sup><a href="#fn6" id="ref6">6</a></sup></p>
+                <p>We find ourselves trapped within an institutional tyranny that seeks to reduce the vibrant, infinite tapestry of human existence down to cold, calculated numbers on a ledger. The machine does not merely spin cotton; it grinds down the human spirit, rendering our brothers and sisters mere cogs in an unfeeling engine of profit. The tragic horrors of Peterloo still echo violently in my chest—a brutal testament to what happens when authority values the cold maintenance of order over the sacred pulse of human life.</p>
                 
                 <p>Yet, do not despair. Where the logic of the state fails, the unyielding power of the imagination must rise to take its place. Poetry is not a mere luxury; it is the ultimate weapon of resistance, a mirror that reflects the magnificent, hidden potential of our own collective soul.</p>
 
@@ -335,7 +272,7 @@
                     In unvanquishable number—<br>
                     Shake your chains to earth like dew<br>
                     Which in sleep had fallen on you—<br>
-                    Ye are many—they are few."<sup><a href="#fn7" id="ref7">7</a></sup><br>
+                    Ye are many—they are few."<br>
                     <span style="font-size: 0.85rem; font-style: normal; color: #70655c;">— Percy Bysshe Shelley, <em>The Mask of Anarchy</em></span>
                 </blockquote>
 
@@ -344,30 +281,6 @@
                 <div class="letter-signature">
                     Your faithful servant,<br>
                     <span style="font-family: 'Brush Script MT', cursive, serif; font-size: 1.8rem;">Percy Bysshe Shelley</span>
-                </div>
-            </div>
-
-            <h3>Era Illustrations & Gothic Accents</h3>
-            <div class="gallery-grid">
-                <div class="gallery-card">
-                    <img src="1000031597.jpg" alt="Romantic Gothic Artwork Portfolio 1">
-                    <h4>Gothic Expressionism &bull; <em>The Nightmare (Detail)</em></h4>
-                    <p>Highlighting the deep, dark contrasts of Romantic visual storytelling, mirroring the internal anxieties found in Mary Shelley's literary circles.<sup><a href="#fn8" id="ref8">8</a></sup></p>
-                </div>
-                <div class="gallery-card">
-                    <img src="1000031599.jpg" alt="Romantic Gothic Artwork Portfolio 2">
-                    <h4>Francisco Goya &bull; <em>Saturn Devouring His Son</em></h4>
-                    <p>A terrifying, visceral reflection of institutional madness and the horrors of unchecked, unfeeling power consuming the innocent.</p>
-                </div>
-                <div class="gallery-card">
-                    <img src="1000031601.jpg" alt="Romantic Gothic Artwork Portfolio 3">
-                    <h4>Jan Matejko &bull; <em>The Apparition of Barbara Radziwiłł</em></h4>
-                    <p>A powerful execution of historical and psychological drama, where human grief manifests as an irrational, spiritual vision over royal order.<sup><a href="#fn9" id="ref9">9</a></sup></p>
-                </div>
-                <div class="gallery-card">
-                    <img src="1000031603.jpg" alt="Romantic Gothic Artwork Portfolio 4">
-                    <h4>Mikhail Vrubel &bull; <em>The Demon Seated</em></h4>
-                    <p>An intense portrayal of individualistic melancholy, isolation, and structural defiance reflecting the core internal tension of the Romantic soul.</p>
                 </div>
             </div>
         </section>
@@ -381,7 +294,7 @@
                 <p><strong>Subject:</strong> A Solitary Yellow Buttercup (<em>Ranunculus acris</em>)<br>
                 <strong>Setting:</strong> A quiet, overgrown corner of a backyard garden in Surrey, British Columbia</p>
                 
-                <p>Leaving behind the rigid, clinical vocabulary of the scientist, I sit on the damp earth to observe a single buttercup. It stands completely exposed, swaying with a fragile yet fierce autonomy at the mercy of a chaotic, shifting wind. Its petals, a brilliant and almost defiant yellow, catch the filtering sunlight like a tiny, localized sun anchored to the soil.<sup><a href="#fn10" id="ref10">10</a></sup></p>
+                <p>Leaving behind the rigid, clinical vocabulary of the scientist, I sit on the damp earth to observe a single buttercup. It stands completely exposed, swaying with a fragile yet fierce autonomy at the mercy of a chaotic, shifting wind. Its petals, a brilliant and almost defiant yellow, catch the filtering sunlight like a tiny, localized sun anchored to the soil.</p>
                 
                 <p>There is an intense, quiet energy radiating from this small plant. It exists entirely in the present, completely unconcerned with industrial efficiency, utility, or human purpose. In its solitary existence, it embodies a quiet rebellion against the manicured, orderly symmetry that human hands so often try to force upon the natural world. It is vulnerable, yet it burns with life.</p>
             </div>
@@ -407,41 +320,9 @@
 
             <div class="audio-box">
                 <h4>Auditory Companion: The Audio Symphony Guide</h4>
-                <p><strong>Soundscape pairing:</strong> Raw, localized backyard environmental audio (birds, wind rustling the grass) interlaced with the fluid, unrestrained movements of <strong>Ludwig van Beethoven’s <em>Pastoral Symphony (Symphony No. 6)</em></strong>.<sup><a href="#fn11" id="ref11">11</a></sup></p>
+                <p><strong>Soundscape pairing:</strong> Raw, localized backyard environmental audio (birds, wind rustling the grass) interlaced with the fluid, unrestrained movements of <strong>Ludwig van Beethoven’s <em>Pastoral Symphony (Symphony No. 6)</em></strong>.</p>
                 <p><strong>Rationale:</strong> This specific auditory pairing serves as a direct rejection of the rigid, mathematical symmetry that defined Enlightenment-era musical structures. Beethoven’s fluid, emotionally expressive shifts capture the unpredictable, organic essence of the natural environment, seamlessly bridging the gap between the deeply personal space of a local Canadian backyard and the expansive, universal scale of the global Romantic movement.</p>
             </div>
-        </section>
-
-        <!-- CITATIONS & FOOTNOTES SECTION -->
-        <section id="citations" class="citation-section">
-            <h2>Sources & Academic Frameworks</h2>
-            
-            <h3>Bibliography</h3>
-            <ul class="citation-list">
-                <li>Beethoven, Ludwig van. <em>Symphony No. 6 in F Major, Op. 68 ("Pastoral")</em>. Conducted by Karl Böhm. Vienna Philharmonic. Deutsche Grammophon, 1971. Audio.</li>
-                <li>Burke, Edmund. <em>A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful</em>. Edited by James T. Boulton. London: Routledge and Kegan Paul, 1958.</li>
-                <li>Ferber, Michael. <em>Romanticism: A Very Short Introduction</em>. Oxford: Oxford University Press, 2010.</li>
-                <li>Shelley, Mary. <em>Frankenstein; or, The Modern Prometheus</em>. London: Lackington, Hughes, Harding, Mavor, & Jones, 1818.</li>
-                <li>Shelley, Percy Bysshe. "The Mask of Anarchy." In <em>The Poetical Works of Percy Bysshe Shelley</em>, edited by Edward Dowden. London: Macmillan and Co., 1893.</li>
-                <li>Shelley, Percy Bysshe. "A Defence of Poetry." In <em>Shelley's Poetry and Prose</em>, edited by Donald H. Reiman and Neil Fraistat, 509–535. New York: W. W. Norton & Company, 2002.</li>
-            </ul>
-
-            <hr>
-
-            <h3>Footnotes</h3>
-            <ol class="footnote-list">
-                <li id="fn1">For a detailed overview of the structural and intellectual pivot away from post-Revolutionary political structures toward aesthetic interiority, see Michael Ferber, <em>Romanticism: A Very Short Introduction</em> (Oxford: Oxford University Press, 2010), 23–41. <a href="#ref1" title="Jump back to text.">↩</a></li>
-                <li id="fn2">Edmund Burke, <em>A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful</em>, ed. James T. Boulton (London: Routledge and Kegan Paul, 1958), 57–64. <a href="#ref2" title="Jump back to text.">↩</a></li>
-                <li id="fn3">The psychological exploration of dark irrationality in art often foundational to the Gothic movement is addressed in early academic frameworks analyzing Fuseli’s inner landscapes. <a href="#ref3" title="Jump back to text.">↩</a></li>
-                <li id="fn4">Ferber, <em>Romanticism</em>, 54. <a href="#ref4" title="Jump back to text.">↩</a></li>
-                <li id="fn5">Percy Bysshe Shelley to Thomas Love Peacock, Pisa, Italy, custom thematic compilation mirroring letters of the 1819–1821 Italian residency. <a href="#ref5" title="Jump back to text.">↩</a></li>
-                <li id="fn6">See Percy Bysshe Shelley, "A Defence of Poetry," in <em>Shelley's Poetry and Prose</em>, ed. Donald H. Reiman and Neil Fraistat (New York: W. W. Norton & Company, 2002), 512–515. <a href="#ref6" title="Jump back to text.">↩</a></li>
-                <li id="fn7">Percy Bysshe Shelley, "The Mask of Anarchy," in <em>The Poetical Works of Percy Bysshe Shelley</em>, ed. Edward Dowden (London: Macmillan and Co., 1893), stanzas 38. <a href="#ref7" title="Jump back to text.">↩</a></li>
-                <li id="fn8">This specific thematic overlap highlights foundational Gothic elements cross-referenced with Mary Shelley, <em>Frankenstein; or, The Modern Prometheus</em> (London: Lackington, Hughes, Harding, Mavor, & Jones, 1818). <a href="#ref8" title="Jump back to text.">↩</a></li>
-                <li id="fn9">Analyzed in coursework contexts as an interpretation of historical folklore and psychological haunting over state or institutional logic. <a href="#ref9" title="Jump back to text.">↩</a></li>
-                <li id="fn10">Observations generated under localized field exercises within the modern Pacific Northwest ecological context, simulating classical 19th-century nature logs. <a href="#ref11" title="Jump back to text.">↩</a></li>
-                <li id="fn11">Ludwig van Beethoven, <em>Symphony No. 6 in F Major, Op. 68 ("Pastoral")</em>, Vienna Philharmonic, conducted by Karl Böhm, Deutsche Grammophon, 1971, audio. <a href="#ref11" title="Jump back to text.">↩</a></li>
-            </ol>
         </section>
 
     </main>
